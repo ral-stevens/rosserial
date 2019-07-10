@@ -484,7 +484,7 @@ private:
 
   Socket socket_;
   AsyncReadBuffer<Socket> async_read_buffer_;
-  enum { buffer_max = 1023 };
+  enum { buffer_max = 4096 };
   bool active_;
 
   ros::NodeHandle nh_;
